@@ -44,6 +44,16 @@ public class Consola extends Item {
     }
 
     /**
+    * Devuelve si la consola es de una marca concreta.
+    *
+    * @param m La marca a comparar.
+    * @return true si coincide, false si no.
+    */
+    public boolean esDeMarca(String m) {
+        return this.marca.equalsIgnoreCase(m);
+    }
+    
+    /**
      * Devuelve información completa de la consola.
      *
      * @return Cadena con todos los datos.

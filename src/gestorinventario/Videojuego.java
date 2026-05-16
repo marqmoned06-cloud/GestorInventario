@@ -59,6 +59,16 @@ public class Videojuego extends Item {
     }
 
     /**
+    * Devuelve si el videojuego es de una plataforma concreta.
+    *
+    * @param p La plataforma a comparar.
+    * @return true si coincide, false si no.
+    */
+    public boolean esDePlataforma(String p) {
+        return this.plataforma.equalsIgnoreCase(p);
+    }
+    
+    /**
      * Devuelve información completa del videojuego.
      *
      * @return Cadena con todos los datos.

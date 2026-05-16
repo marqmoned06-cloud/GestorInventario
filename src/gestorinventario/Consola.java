@@ -35,12 +35,12 @@ public class Consola extends Item {
     }
 
     /**
-     * Calcula el precio final de la consola.
-     *
-     * @return El precio sin descuento.
-     */
+    * Calcula el precio final añadiendo gastos de envío de 10€.
+    *
+    * @return El precio con gastos de envío incluidos.
+    */
     public double calcularPrecioFinal() {
-        return getPrecio();
+        return getPrecio() + 10.0;
     }
 
     /**

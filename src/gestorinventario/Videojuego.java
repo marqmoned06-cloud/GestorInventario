@@ -50,12 +50,12 @@ public class Videojuego extends Item {
     }
 
     /**
-     * Calcula el precio final del videojuego.
-     *
-     * @return El precio sin descuento.
-     */
+    * Calcula el precio final aplicando un descuento del 10%.
+    *
+    * @return El precio con descuento aplicado.
+    */
     public double calcularPrecioFinal() {
-        return getPrecio();
+        return getPrecio() * 0.90;
     }
 
     /**

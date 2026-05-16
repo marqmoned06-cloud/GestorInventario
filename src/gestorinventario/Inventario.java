@@ -65,5 +65,20 @@ public class Inventario {
     public int totalArticulos() {
         return articulos.size();
     }
+    
+    /**
+    * Busca un artículo por nombre y lo devuelve.
+    *
+    * @param nombre El nombre del artículo a buscar.
+    * @return El artículo encontrado o null si no existe.
+    */
+    public Item buscarItem(String nombre) {
+        for (Item item : articulos) {
+            if (item.getNombre().equalsIgnoreCase(nombre)) {
+                return item;
+            }
+        }
+        return null;
+    }
 
 }

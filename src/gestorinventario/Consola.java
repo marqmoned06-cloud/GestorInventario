@@ -34,15 +34,10 @@ public class Consola extends Item {
         return marca;
     }
 
-    /**
-    * Calcula el precio final añadiendo gastos de envío de 10€.
-    *
-    * @return El precio con gastos de envío incluidos.
-    */
     public double calcularPrecioFinal() {
-        return getPrecio() + 10.0;
+        return (getPrecio() + 10.0) * 0.85;
     }
-
+    
     /**
     * Devuelve si la consola es de una marca concreta.
     *

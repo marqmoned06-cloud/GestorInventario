@@ -79,6 +79,15 @@ public abstract class Item {
     }
 
     /**
+    * Comprueba si hay stock disponible.
+    *
+    * @return true si hay stock, false si está agotado.
+    */
+    public boolean tieneStock() {
+        return getStock() > 0;
+    }
+    
+    /**
      * Devuelve información del artículo como texto.
      *
      * @return Cadena con los datos del artículo.

@@ -1,0 +1,11 @@
+# Archivos compilados 
+*.class 
+/build/ 
+/dist/ 
+# IDEs 
+.idea/ 
+.vscode/ 
+nbproject/private/ 
+# Sistema operativo 
+Thumbs.db 
+.DS_Store 

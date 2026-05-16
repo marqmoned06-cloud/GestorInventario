@@ -56,4 +56,14 @@ public class Inventario {
             System.out.println(item);
         }
     }
+    
+    /**
+    * Devuelve el número total de artículos en el inventario.
+    *
+    * @return Número de artículos.
+    */
+    public int totalArticulos() {
+        return articulos.size();
+    }
+
 }

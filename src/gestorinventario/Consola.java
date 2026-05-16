@@ -35,12 +35,12 @@ public class Consola extends Item {
     }
 
     /**
-     * Calcula el precio final de la consola.
-     *
-     * @return El precio sin descuento.
-     */
+    * Calcula el precio final aplicando un descuento del 15%.
+    *
+    * @return El precio con descuento aplicado.
+    */
     public double calcularPrecioFinal() {
-        return getPrecio();
+        return getPrecio() * 0.85;
     }
 
     /**

@@ -50,12 +50,12 @@ public class Videojuego extends Item {
     }
 
     /**
-     * Calcula el precio final del videojuego.
-     *
-     * @return El precio sin descuento.
-     */
+    * Calcula el precio final añadiendo gastos de envío de 5€.
+    *
+    * @return El precio con gastos de envío incluidos.
+    */
     public double calcularPrecioFinal() {
-        return getPrecio();
+        return getPrecio() + 5.0;
     }
 
     /**
